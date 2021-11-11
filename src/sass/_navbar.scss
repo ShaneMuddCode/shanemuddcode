@@ -1,0 +1,136 @@
+// **** Navbar
+
+.navbar-main {
+  background-color: $smalt-blue-700;
+  position: sticky;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  z-index: 50;
+
+  .container {
+    max-width: 72rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    .container-2 {
+      display: flex;
+      justify-content: space-between;
+      height: 4rem;
+
+      .container-3 {
+        display: flex;
+        align-items: center;
+        --tw-space-x-reverse: 0;
+        margin-right: calc(0px * var(--tw-space-x-reverse));
+        margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
+      }
+    }
+  }
+
+  .logo-name {
+    align-items: center;
+    padding: 0.75rem;
+    color: $smalt-blue-50;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    // font-weight: 700;
+    letter-spacing: 0.1em;
+
+    @media (min-width: 768px) {
+      font-size: 2.25rem;
+      line-height: 2.5rem;
+      grid-column: span 2 / span 2;
+    }
+
+    &:hover {
+      color: $smalt-blue-300;
+    }
+  }
+
+  .nav-1 {
+    display: none;
+    align-items: center;
+    // margin-left: 0.75rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
+    color: $smalt-blue-50;
+
+    @media (min-width: 768px) {
+      display: flex;
+    }
+
+    .navhashlink {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.5rem 0.75rem;
+      color: $smalt-blue-50;
+      border-radius: 0.25rem;
+
+      &:hover {
+        color: $smalt-blue-300;
+      }
+    }
+
+    .nhl-active {
+      color: $smalt-blue-50;
+      // background-color: $smalt-blue-600;
+    }
+  }
+
+  .social-links {
+    display: none;
+    align-items: center;
+
+    @media (min-width: 768px) {
+      display: flex;
+    }
+
+    .social-icon {
+      margin: 0 0.75rem 0 0.75rem;
+    }
+  }
+
+  .mobile-menu-button {
+    display: flex;
+    align-items: center;
+
+    .hamburger-icon {
+      color: $smalt-blue-50;
+      margin: 0 0.75rem 0 0.75rem;
+    }
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  .dropdown-hidden {
+    display: none;
+  }
+}
+
+// **** Navbar Mobile Menu
+
+.mobile-menu {
+  .dropdown-link {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 0.25rem;
+
+    color: $smalt-blue-50;
+    background-image: linear-gradient($smalt-blue-600 50%, $smalt-blue-550);
+
+    &:hover {
+      color: $smalt-blue-300;
+    }
+  }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}

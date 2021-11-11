@@ -1,0 +1,142 @@
+// **** About Screen
+
+.about-bl {
+  height: 4rem;
+  background-color: $smalt-blue-600;
+  // border-bottom: 1px;
+}
+
+.about-main {
+  position: relative;
+  // border-top: 1px;
+
+  .about-image-main {
+    position: relative;
+    // height: 100vh;
+
+    .about-bg-image {
+      position: absolute;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      filter: saturate(60%);
+      z-index: -1;
+    }
+
+    .card-container {
+      // position: relative;
+      max-width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      flex-direction: column;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+
+      @media (min-width: 768px) {
+        height: 100vh;
+        max-width: 72rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+
+      .card {
+        // position: relative;
+        max-width: 85%;
+        background-color: $med-gray;
+        border-radius: 0.5rem;
+        padding: 2rem;
+        border-left-width: 8px;
+        border-color: $smalt-blue-700;
+
+        @media (min-width: 768px) {
+          //   display: flex;
+          max-width: 75%;
+          display: grid;
+          grid-template-columns: 33.3% 66.7%;
+          padding: 1rem auto 1rem auto;
+        }
+      }
+
+      .card-header {
+        font-size: 3rem;
+        line-height: 1;
+        color: $light-off-white;
+        margin-bottom: 1rem;
+      }
+
+      .card-image {
+        border-radius: 0.25rem;
+        margin-right: 2rem;
+        height: 8rem;
+        object-fit: cover;
+        width: 100%;
+
+        @media (min-width: 768px) {
+          height: 10rem;
+          object-position: left;
+        }
+      }
+
+      .about-list-container {
+        color: $light-off-white;
+        margin-top: 1rem;
+
+        @media (min-width: 768px) {
+          padding-left: 2rem;
+          margin-top: 0rem;
+        }
+
+        .header-2 {
+          font-size: 1.25rem;
+          line-height: 1.75rem;
+
+          @media (min-width: 768px) {
+            font-size: 1.5rem;
+            line-height: 2rem;
+          }
+        }
+
+        .about-list-items {
+          font-size: 1.125rem;
+          line-height: 1.75rem;
+
+          @media (min-width: 768px) {
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+          }
+
+          .about-ul {
+            margin: 0;
+            padding: 0;
+          }
+        }
+
+        .btn-container {
+          display: flex;
+
+          @media (max-width: 768px) {
+            justify-content: center;
+          }
+        }
+
+        .btn-outline {
+          //   display: flex;
+          margin-top: 1rem;
+          border: 1px #fff solid;
+          font-size: medium;
+          //   align-self: center;
+        }
+      }
+    }
+  }
+
+  .footer-bl {
+    height: 4rem;
+    background-color: $smalt-blue-800;
+    color: #fff;
+  }
+}
