@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import sanityClient from '../client.js'
-// import { SocialIcon } from 'react-social-icons'
 import ProjectCardLinks from './ProjectCardLinks.js'
 
 const Project = () => {
