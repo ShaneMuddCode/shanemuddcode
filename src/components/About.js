@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react'
-// import { NavLink } from 'react-router-dom'
 import sanityClient from '../client.js'
 import imageUrlBuilder from '@sanity/image-url'
-// import BlockContent from '@sanity/block-content-to-react'
 import image from '../img/severnriver.png'
 
 const builder = imageUrlBuilder(sanityClient)
@@ -23,7 +21,7 @@ const About = () => {
       )
       .then((data) => setAuthor(data[0]))
       .catch(console.error)
-  })
+  }, [])
 
   if (!author) return <div>Loading...</div>
 
