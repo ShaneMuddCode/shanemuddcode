@@ -11,7 +11,7 @@ const Post = () => {
       .then((data) => setPost(data))
       .catch(console.error)
   }, [])
-  // bg-blueGray-200
+
   return (
     <>
       <div className='post-main'>
