@@ -22,7 +22,8 @@
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "4.0.3",
     "react-social-icons": "^5.6.1",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^1.1.2",
+    "webpack-hot-middleware": "^2.25.1"
   },
   "scripts": {
     "start": "craco start",
