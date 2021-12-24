@@ -5069,6 +5069,11 @@
   "resolved" "https://registry.npmjs.org/immer/-/immer-5.3.6.tgz"
   "version" "5.3.6"
 
+"immer@^9.0.6":
+  "integrity" "sha512-G95ivKpy+EvVAnAab4fVa4YGYn24J1SpEktnJX7JJ45Bd7xqME/SCplFzYFmTbrkwZbQ4xJK1xMTUYBkN6pWsQ=="
+  "resolved" "https://registry.npmjs.org/immer/-/immer-9.0.6.tgz"
+  "version" "9.0.6"
+
 "import-cwd@^2.0.0":
   "integrity" "sha1-qmzzbnInYShcs3HsZRn1PiQ1sKk="
   "resolved" "https://registry.npmjs.org/import-cwd/-/import-cwd-2.1.0.tgz"
