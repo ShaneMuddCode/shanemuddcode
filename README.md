@@ -2,8 +2,4 @@ Portfolio website for Shane Mudd, developer in the DC area. JavaScript, React, S
 
 www.shanemudd.com
 
-# Changelog
-
-11/16/21 - start new branch to change to sanity cdn
-
-11/11/21 - Clean repo
+T99_test
